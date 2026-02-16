@@ -1,0 +1,1 @@
+Configuration Management is the process of controlling and managing changes in software and system components to maintain consistency and quality. It helps in tracking versions, controlling modification and ensuring the correct configuration is used throughout the software development lifecycle.
