@@ -148,7 +148,7 @@ http://localhost:8501
 ## 📷 Screenshots
 
 **Web Application — Legitimate URL Detected**
-![Web App Screenshot](screenshots/web_app.png)
+![Web App Screenshot]("C:\Users\IQRA KHAN\OneDrive\Gambar\Screenshots\Screenshot 2026-08-02 140946.png")
 
 **CLI Version — Prediction Output**
 ![CLI Screenshot](screenshots/cli_output.png)
