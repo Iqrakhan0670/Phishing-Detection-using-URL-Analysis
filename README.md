@@ -1,114 +1,183 @@
-## 🛡️ Phishing URL Detection using Machine Learning
+# 🛡️ Phishing URL Detection using Machine Learning
+
+A machine learning-based web application that detects phishing websites using URL analysis. The system helps users identify suspicious links before visiting potentially harmful websites.
 
 ## 👥 Team Members
+
 - **Saniya Santosh Choughule**
 - **Iqra Mohd Nisar Khan**
-  
----
 
 ## 🧠 Project Goal
-To develop a machine learning-based tool that can detect phishing websites using only the URL. This helps in preventing users from falling victim to fraudulent sites.
 
----
+To develop a machine learning-based tool that detects phishing websites using only the URL — helping users avoid falling victim to fraudulent sites before they click.
 
 ## 🔍 Problem Statement
 
-Phishing is a deceptive technique used by attackers to trick individuals into providing sensitive data by impersonating trusted websites. These fake websites are commonly distributed via URLs that look legitimate. Manual detection is difficult, and traditional blacklists often fail to detect new phishing links. Our tool provides a machine-learning-based approach to analyze and detect phishing URLs dynamically.
+Phishing is a deceptive technique used by attackers to trick individuals into revealing sensitive data by impersonating trusted websites. These fake sites are commonly distributed via URLs designed to look legitimate. Manual detection is difficult, and traditional blacklist-based approaches often fail to catch newly created phishing links.
 
----
+This project uses **Machine Learning** to analyze URL characteristics and classify a URL as **Phishing** or **Legitimate** in real time.
 
 ## 💡 Features
 
-- Input a URL and get instant prediction (Phishing or Legitimate)
-- Trained on a real-world dataset of labeled URLs
-- Random Forest classifier for reliable detection
-- Simple CLI-based tool
-- Cleanly structured Python code
-
----
+- ✅ User-friendly web interface built with Streamlit
+- ✅ Real-time phishing URL detection
+- ✅ Random Forest Classifier for reliable, accurate predictions
+- ✅ Trained on a real-world dataset of labeled URLs
+- ✅ Instant URL analysis with clear results
+- ✅ Dark-themed, responsive UI
+- ✅ Simple and easy to use — no technical knowledge required
 
 ## ⚙️ Technologies Used
 
-- **Python 3.11** – Core programming language
-- **Scikit-learn** – For training the machine learning model
-- **Pandas** – For data manipulation and analysis
-- **Joblib** – For saving and loading the trained model
+| Category | Tools |
+|---|---|
+| Language | Python 3.11 |
+| Web Interface | Streamlit |
+| Machine Learning | Scikit-learn |
+| Data Handling | Pandas, NumPy |
+| Model Persistence | Joblib |
 
----
-## 🧪 How to Use
-```bash
-### 1. Clone this Repository
+## 📊 Machine Learning Model
 
-git clone https://github.com/saniyaachaughule/Phishing-Detection-using-URL-Analysis
-cd Phishing-Detection-using-URL-Analysis
+**Algorithm:** Random Forest Classifier
+**Dataset:** Phishing URL Dataset (Kaggle) — containing labeled legitimate and phishing URLs
 
-### 2. Set Up Environment
+**Workflow:**
+1. Data Collection
+2. Feature Extraction
+3. Model Training
+4. Model Evaluation
+5. URL Prediction via Web Interface
 
-python -m venv phishing-env
-phishing-env\Scripts\activate  # On Windows
-pip install -r requirements.txt
+### Feature Extraction
 
-### 3. Train the Model
+The system extracts key URL characteristics such as:
+- URL length
+- Presence of HTTPS
+- Number of dots
+- Special characters
+- Domain information
+- Suspicious URL patterns
 
-cd tool/source_code
-python train_model.py
+### Prediction Flow
 
-### 4. Run URL Prediction
-
-python predict_cli.py
-```
----
-
-## 📊 Screenshots & outputs 
-
-Enter a URL to check: https://google.com/
-
-Result: Legitimate
-
-![image](https://github.com/user-attachments/assets/8bb42e88-126b-46b5-9b94-a8d376c5bbc1)
-
----
+Extracted features → passed to the trained Random Forest model → model classifies the URL as **Legitimate** or **Phishing** → result displayed instantly on the web interface.
 
 ## 🛠️ Project Structure
 
-![Screenshot 2025-05-06 135644](https://github.com/user-attachments/assets/cdb43972-37f5-42f7-bbb3-3c6d967fdd2b)
+```
+Phishing_URL_Detection/
+│
+├── tool/
+│   └── source_code/
+│       ├── train_model.py       # Trains the ML model using URL dataset
+│       ├── predict_cli.py       # CLI for predicting phishing/legit URLs
+│       ├── phishing_model.pkl   # Saved trained ML model
+│       └── dataset.csv          # Dataset used for training/testing
+│
+├── phishing-env/                # Python virtual environment (not uploaded)
+│
+├── Research_Paper.pdf           # Final research paper for internship
+├── Presentation.pdf             # Slide deck explaining project
+├── requirements.txt             # Python dependencies
+├── README.md                    # Project documentation
+└── .gitignore                   # Files/folders to ignore in Git
+```
 
+## 🔄 How It Works — Visual Flow
 
----
+```
++----------------+     +------------------+     +------------------+
+|  User Input    |     | Feature          |     | Random Forest    |
+|  (URL to Check)|---->| Extraction       |---->| Model             |
++----------------+     +------------------+     | (phishing_model.pkl)
+        ^                       |                +------------------+
+        |                       v                        |
++----------------+     +------------------+               |
+|  Display       |<----| URL Prediction   |<--------------+
+|  Result        |     | (Predict URL)    |
++----------------+     +------------------+
+```
 
-## 🔍 How It Works:
+## 🖥️ Web Application Interface
 
-- **Training**: Uses historical data (labeled URLs) to train a machine learning model (Random Forest).
+1. User enters a URL into the input field
+   ```
+   https://google.com/
+   ```
+2. Clicks **"Check URL"**
+3. System analyzes the URL and displays the result:
+   ```
+   ✅ Legitimate URL
+   ```
+   or
+   ```
+   ⚠️ Phishing URL
+   ```
 
-- **Prediction**: Accepts a URL, processes its features, and uses the trained model to predict whether the URL is phishing or legitimate.
+## 🚀 How to Run the Project
 
-- **Tool Output**: Provides real-time results (Phishing or Legitimate) based on the model’s prediction.
+**1. Clone the Repository**
+```bash
+git clone https://github.com/Iqrakhan0670/Phishing-Detection-using-URL-Analysis.git
+cd Phishing-Detection-using-URL-Analysis
+```
 
-- This tool helps users avoid phishing attacks by flagging suspicious URLs before they click on them.
+**2. Set Up Environment**
+```bash
+python -m venv phishing-env
+phishing-env\Scripts\activate   # On Windows
+pip install -r requirements.txt
+```
 
-![image](https://github.com/user-attachments/assets/cbf7de19-6ab5-4f23-a7fe-37b960e83df5)
+**3. Train the Model (Optional)**
+```bash
+python train_model.py
+```
 
----
+**4. Run the Streamlit Application**
+```bash
+python -m streamlit run app.py
+```
+
+**5. Open in Browser**
+```
+http://localhost:8501
+```
+
+## 📷 Screenshots
+
+**Web Application — Legitimate URL Detected**
+![Web App Screenshot](screenshots/web_app.png)
+
+**CLI Version — Prediction Output**
+![CLI Screenshot](screenshots/cli_output.png)
+
+*(Add your screenshot images to a `screenshots/` folder in the repo and update the paths above to match your filenames.)*
+
+## 🎯 Applications
+
+- Cybersecurity Awareness
+- Safe Web Browsing
+- Educational Demonstration
+- Phishing Prevention
+- Security Research
 
 ## 🎥 Demo Video
-👉Watch on YouTube: [https://youtu.be/xAaTMeI30cI?si=WIquzm39vT4EUyrY]
 
-
----
+👉 [Watch on YouTube](https://youtu.be/xAaTMeI30cI?si=WIquzm39vT4EUyrY)
 
 ## 📄 License
-This project is for educational purposes only under the MIT License.
 
----
+This project is licensed under the **MIT License** and developed for educational and research purposes only.
 
 ## ⚠️ Disclaimer
-This tool is a demonstration of ML-based detection and is not a replacement for enterprise-grade threat protection solutions.
 
----
+This project is a demonstration of ML-based phishing detection. Predictions may not always be 100% accurate and should not be considered a substitute for professional, enterprise-grade cybersecurity solutions.
 
 ## 📚 References
-Scikit-learn Docs
 
-Phishing Dataset (Kaggle)
-
----
+- [Scikit-learn Documentation](https://scikit-learn.org/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- Phishing URL Dataset (Kaggle)
+- Python Official Documentation
