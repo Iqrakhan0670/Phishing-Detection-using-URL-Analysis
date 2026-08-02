@@ -148,12 +148,11 @@ http://localhost:8501
 ## 📷 Screenshots
 
 **Web Application — Legitimate URL Detected**
-![Web App Screenshot](<img width="813" height="456" alt="Screenshot 2026-08-02 140946" src="https://github.com/user-attachments/assets/0da4dfe3-6db1-42ec-9ae2-b70637b4aa4c" />
-)
+![Web App Screenshot]<img width="813" height="456" alt="Screenshot 2026-08-02 140946" src="https://github.com/user-attachments/assets/0da4dfe3-6db1-42ec-9ae2-b70637b4aa4c" />
+
 
 **CLI Version — Prediction Output**
-![CLI Screenshot](<img width="818" height="288" alt="Screenshot 2026-08-02 140856" src="https://github.com/user-attachments/assets/cd65caaf-c674-4600-ac6f-f0f63ef9d206" />
-)
+![CLI Screenshot]<img width="818" height="288" alt="Screenshot 2026-08-02 140856" src="https://github.com/user-attachments/assets/cd65caaf-c674-4600-ac6f-f0f63ef9d206" />
 
 
 ## 🎯 Applications
