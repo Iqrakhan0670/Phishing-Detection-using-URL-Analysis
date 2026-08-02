@@ -1,7 +1,3 @@
-<img width="818" height="288" alt="Screenshot 2026-08-02 140856" src="https://github.com/user-attachments/assets/d31acace-53b9-46c3-94e6-6b39fed82122" />
-<img width="818" height="288" alt="Screenshot 2026-08-02 140856" src="https://github.com/user-attachments/assets/13e30d82-851c-454c-a04e-204f704bf56c" />
-<img width="813" height="456" alt="Screenshot 2026-08-02 140946" src="https://github.com/user-attachments/assets/f80d19b1-ae52-4f97-a3b0-b1cdbb5747bb" />
-<img width="813" height="456" alt="Screenshot 2026-08-02 140946" src="https://github.com/user-attachments/assets/afef66f9-3892-47bd-b7fe-67a6a0ed7207" />
 # 🛡️ Phishing URL Detection using Machine Learning
 
 A machine learning-based web application that detects phishing websites using URL analysis. The system helps users identify suspicious links before visiting potentially harmful websites.
@@ -152,10 +148,10 @@ http://localhost:8501
 ## 📷 Screenshots
 
 **Web Application — Legitimate URL Detected**
-![Web App Screenshot](1785659988505_image.png)
+![Web App Screenshot](<img width="813" height="456" alt="Screenshot 2026-08-02 140946" src="https://github.com/user-attachments/assets/afef66f9-3892-47bd-b7fe-67a6a0ed7207" />)
 
 **CLI Version — Prediction Output**
-![CLI Screenshot](screenshots/cli_output.png)
+![CLI Screenshot](<img width="818" height="288" alt="Screenshot 2026-08-02 140856" src="https://github.com/user-attachments/assets/d31acace-53b9-46c3-94e6-6b39fed82122" />)
 
 
 ## 🎯 Applications
