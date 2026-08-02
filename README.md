@@ -148,12 +148,11 @@ http://localhost:8501
 ## 📷 Screenshots
 
 **Web Application — Legitimate URL Detected**
-![Web App Screenshot]("C:\Users\IQRA KHAN\OneDrive\Gambar\Screenshots\Screenshot 2026-08-02 140946.png")
+![Web App Screenshot](1785659988505_image.png)
 
 **CLI Version — Prediction Output**
 ![CLI Screenshot](screenshots/cli_output.png)
 
-*(Add your screenshot images to a `screenshots/` folder in the repo and update the paths above to match your filenames.)*
 
 ## 🎯 Applications
 
